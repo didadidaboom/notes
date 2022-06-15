@@ -1,0 +1,5 @@
+Hbase:
+  + 所有服务器时间同步
+    ```
+      ntpdate 0.cn.pool.ntp.org
+    ```
