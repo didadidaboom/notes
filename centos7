@@ -1,0 +1,5 @@
++ create virtual env
+  ```
+  # miniconda
+  conda create -n reco_sys python=3.6.7
+  ```
