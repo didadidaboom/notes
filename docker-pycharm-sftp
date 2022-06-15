@@ -1,0 +1,31 @@
+# 配置远程服务器的docker连接
++ set port when starting container
+  ```
+  docker run -p 8022:22....
+  ```
++ set a password for root user wthin a docker
+  ```
+  #输入
+  passwd
+  ```
++ install dependent modules for docker
+  ```
+  apt-get install openssh-server openssh-client
+  ```
++ modify ssh configuration
+  ```
+  # open config file
+  vim /etc/ssh/sshd_config
+  # add this line at end of sshd_config
+  PermitRootLogin yes # allow user root to login with ssh
+  ```
++ restart service
+  ```
+  /etc/init.d/ssh restart
+  ```
++ exit docker and test the connection
+  ```
+  ssh root@127.0.0.1 -p 8022
+  ```
++ config pycharm and connect to docker
+  +deployment-configuration-sftp-
