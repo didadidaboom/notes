@@ -4,3 +4,4 @@
 + vmware
 + mobaxterm
 + videoscribe
++ termius
