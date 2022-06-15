@@ -28,4 +28,6 @@
   ssh root@127.0.0.1 -p 8022
   ```
 + config pycharm and connect to docker
-  +deployment-configuration-sftp-
+  + deployment-configuration-sftp-(connection and mappings)
+  + deployment-upload to
+  + file-setting-python interpreter-ssh interpreter-existing server configuration
