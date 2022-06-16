@@ -1,5 +1,10 @@
 + create virtual env
   ```
-  # miniconda
-  conda create -n reco_sys python=3.6.7
+  # virtualenv
+  virtualenv -p /usr/bin/python3 reco_sys
   ```
++ run virtualenv
+ ```
+ # run virtualenv
+  source reco_sys/bin/activate
+ ```
