@@ -1,4 +1,6 @@
 # examine the desired directiory by running:
 ```
 du -sh /<directory>/*
+
+df -h
 ```
