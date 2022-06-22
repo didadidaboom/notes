@@ -4,3 +4,8 @@ du -sh /<directory>/*
 
 df -h
 ```
+# 不挂断启动
+```
+nohup <programe-command>
+```
+
