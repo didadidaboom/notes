@@ -1,0 +1,4 @@
+# check results
+```
+yarn logs -applicationId <application ID>
+```
