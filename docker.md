@@ -81,6 +81,10 @@ mysql: source foo.txt
 ```
 docker system prune --all --volumes --force
 ```
+# clean logs
+```
+truncate -s 0 /var/lib/docker/containers/*/*-json.log
+```
 
 + issue - related to entrypoints.sh
   + solved: by specifying latest version of docker 
