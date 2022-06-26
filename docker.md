@@ -77,6 +77,10 @@ docker cp container_id:/foo.txt foo.txt
 #operate mysql through script
 mysql: source foo.txt
 ```
+# clean all useless container or image
+```
+docker system prune --all --volumes --force
+```
 
 + issue - related to entrypoints.sh
   + solved: by specifying latest version of docker 
