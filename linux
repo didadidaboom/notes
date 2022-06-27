@@ -9,3 +9,8 @@ df -h
 nohup <programe-command>
 ```
 
+# find the latest files by modified date
+```
+find /path -printf '%T+ %p\n' | sort -r | head
+```
+
