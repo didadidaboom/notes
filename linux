@@ -14,3 +14,6 @@ nohup <programe-command>
 find /path -printf '%T+ %p\n' | sort -r | head
 ```
 
+#check memeory used in current directory
+ll -h
+
