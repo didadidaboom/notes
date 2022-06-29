@@ -17,3 +17,6 @@ find /path -printf '%T+ %p\n' | sort -r | head
 #check total memeory used in current directory
 du -ch ./* | grep total
 
+# list all subdirectories size
+du -shc ./*
+
