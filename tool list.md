@@ -2,10 +2,12 @@
 
 + audacity
 + vmware
-+ mobaxterm
 + videoscribe
++ mobaxterm
 + termius
   + http://www.ddooo.com/softdown/182046.htm
++ GUI for MongoDB
+  + robo 3T
 + 原型类
   + Axure
   + 墨刀
