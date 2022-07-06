@@ -10,8 +10,13 @@
   + Axure
   + 墨刀
   + MockPlus
+  + 蓝湖
 + 流程类
-  + Visio
+  + Visio(Win)
   + PPT/KeyNote
-+ 功能类
-  + 各类脑图 
+  + OmniGraffle(Mac)
+  + ProcessOn
++ 思维脑图
+  + Xmin
+  + MindNode(Mac)
+  + MindManager
