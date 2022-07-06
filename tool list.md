@@ -10,8 +10,8 @@
   + robo 3T
 + node.js版本控制工具
   + nvm
-+ node.js
-  + npm/yarn 
++ 包管理工具
+  + npm/yarn/cnpm 
 + 原型类
   + Axure
   + 墨刀
