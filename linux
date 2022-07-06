@@ -3,6 +3,8 @@
 du -sh /<directory>/*
 
 df -h
+
+-T (in unit of G)
 ```
 # 不挂断启动
 ```
