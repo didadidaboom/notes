@@ -86,5 +86,13 @@ docker system prune --all --volumes --force
 truncate -s 0 /var/lib/docker/containers/*/*-json.log
 ```
 
+#端口放行
++ 关防火墙
++ 放行端口
+  ```
+    firewall-cmd --zone=public --add-port=<port-number>/tcp --permanet
+    firewall-cmd --reload
+  ```
+
 + issue - related to entrypoints.sh
   + solved: by specifying latest version of docker 
