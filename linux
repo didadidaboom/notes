@@ -22,3 +22,7 @@ du -ch ./* | grep total
 # list all subdirectories size
 du -shc ./*
 
+# check command on centos
+yum whatprovides <package> (command not found)
+
+
