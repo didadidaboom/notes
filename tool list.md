@@ -9,7 +9,9 @@
 + GUI for MongoDB
   + robo 3T
 + node.js版本控制工具
-  + nvm/yarn
+  + nvm
++ node.js
+  + npm/yarn 
 + 原型类
   + Axure
   + 墨刀
