@@ -26,3 +26,7 @@
   + Xmin
   + MindNode(Mac)
   + MindManager
++ 真机调试工具
+  + Chrom+Android/Safari+ios
+  + Fiddler/Charles
+  + Weinre, Spy-Debugger, vConsole 
