@@ -43,3 +43,5 @@
   + 代码类(ESLint, JSLint, StyleLint..)
   + 流程类(Jira, 禅道，redmine)
   + 工具类(Trello, Teambition, 钉钉，石墨)
++ CI/CD工具
+  + Jenkins/Travis CI/Circle CI
