@@ -42,3 +42,4 @@
 + 缺陷管理工具
   + 代码类(ESLint, JSLint, StyleLint..)
   + 流程类(Jira, 禅道，redmine)
+  + 工具类(Trello, Teambition, 钉钉，石墨)
