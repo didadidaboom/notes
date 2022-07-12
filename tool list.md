@@ -39,3 +39,6 @@
    + showDoc
 + 云笔记
   + 映像笔记/OneNote/有道云笔记
++ 缺陷管理工具
+  + 代码类(ESLint, JSLint, StyleLint..)
+  + 流程类(Jira, 禅道，redmine)
