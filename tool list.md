@@ -45,3 +45,7 @@
   + 工具类(Trello, Teambition, 钉钉，石墨)
 + CI/CD工具
   + Jenkins/Travis CI/Circle CI
++ 数据库
+  + 设计: EZDML
+  + 管理: navicat
+  
