@@ -51,3 +51,7 @@
 + SwitchHosts
 + 开源仓储系统
   + WMS
++ 图片存储
+  + OSS 云存储 七牛
+  + fastdfs 本地分布式存储
+  + EMC
