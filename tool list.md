@@ -33,8 +33,12 @@
 + 接口测试
   + posman/SoapUI
   + Doclever/YApi (Mock)
-+ 前端分类
-  + 类库(JQuery, Lodash); JS库(React, Vue, Angular, Ext JS, Backbone);工具；工具(Webpack<build>, Jest<Test>, ESLint<Lint>, Template<EJS>, 应用类<Echarts/D3/three>)
++ 前端
+  + 类库(JQuery, Lodash); JS库(React, Vue, Angular, Ext JS, Backbone);
+  + 模板技术
+    + Thymeleaf, Freemarker, Jsp, velocity, lua 
+  + 前端框架
+    + easyui, angularjs, react, vue.js
 + API接口文档工具
    + showDoc
 + 云笔记
