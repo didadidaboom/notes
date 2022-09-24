@@ -59,3 +59,8 @@
   + OSS 云存储 七牛
   + fastdfs 本地分布式存储
   + EMC (非结构化存储：图片、视频、语音...)
+  + 数据存储
+    + redis
+    + NAME: mysql\ElesticSearch\Hadoop
+    + SIZE: SAMLL\MIDDLE\BIG
+    + QUERY SPEED: FAST\SUPER FAST\SLOW
