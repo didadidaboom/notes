@@ -64,3 +64,5 @@
     + NAME: mysql\ElesticSearch\Hadoop
     + SIZE: SAMLL\MIDDLE\BIG
     + QUERY SPEED: FAST\SUPER FAST\SLOW
+ + ElesticSearch
+  + ELK(ES\Logstash\Kibana)  
