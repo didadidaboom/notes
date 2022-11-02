@@ -25,7 +25,7 @@
 + 思维脑图
   + Xmin
   + MindNode(Mac)
-  + MindManager
+  + mindjet mindmanager
 + 真机调试工具
   + Chrom+Android/Safari+ios
   + Fiddler/Charles
