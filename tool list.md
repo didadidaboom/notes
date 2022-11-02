@@ -52,6 +52,7 @@
 + 数据库
   + 设计: EZDML
   + 管理: navicat
+  + SQLyog
 + SwitchHosts
 + 开源仓储系统
   + WMS
