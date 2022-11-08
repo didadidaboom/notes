@@ -26,6 +26,9 @@
   + Xmin
   + MindNode(Mac)
   + mindjet mindmanager
++ UI 视觉社交
+  + ps
+  + AI  
 + 真机调试工具
   + Chrom+Android/Safari+ios
   + Fiddler/Charles
