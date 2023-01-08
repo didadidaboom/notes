@@ -16,3 +16,25 @@
   4. sudo npm install --unsafe-perm=true --allow-root
 ```
 
++ issue 2:
+```
+  Npm can't find module "semver" error in Ubuntu
+```
++ solved 2:
+```
+  sudo rm -rf /usr/local/bin/npm /usr/local/share/man/man1/node* ~/.npm
+  sudo rm -rf /usr/local/lib/node*
+  sudo rm -rf /usr/local/bin/node*
+  sudo rm -rf /usr/local/include/node*
+  sudo apt-get purge nodejs npm
+  sudo apt autoremove
+  #Verify installation using
+  node -v
+  npm -v  
+  
+  wget url (url from https://nodejs.org/en/download/)
+  tar -xf node-v#.#.#-linux-x64.tar.xz
+  sudo mv node-v#.#.#-linux-x64/bin/* /usr/local/bin/
+  sudo mv node-v#.#.#-linux-x64/lib/node_modules/ /usr/local/lib/
+```
+
