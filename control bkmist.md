@@ -29,6 +29,7 @@
   # start
   cd /etc/nginx
   nginx
+  sudo service nginx start
   # stop 
   cd /usr/local/nginx/sbin
   ./nignx -s stop
