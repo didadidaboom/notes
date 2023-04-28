@@ -2,3 +2,10 @@
   + remove ad block extension
   + change nginx default file for ubuntu
   
++ wp-config.php
+    
+  define("FS_METHOD", "direct");
+  define("FS_CHMOD_DIR", 0777);
+  define("FS_CHMOD_FILE", 0777);
+  
+  
