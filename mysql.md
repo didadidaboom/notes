@@ -21,7 +21,6 @@
   
   sudo systemctl restart mysql
   ~~~
-
-  
-
-+ 
+   
++
+ grant all on database_name.* TO 'username'@'%' with grant option;
