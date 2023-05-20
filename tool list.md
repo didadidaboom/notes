@@ -56,7 +56,7 @@
   + 设计: EZDML
   + 管理: navicat
   + SQLyog
-+ SwitchHosts
++ IP映射：SwitchHosts
 + 开源仓储系统
   + WMS
 + 图片存储
