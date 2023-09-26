@@ -13,6 +13,7 @@
 + 包管理工具
   + npm/yarn/cnpm 
 + 原型类
+  + Figma 
   + Axure
   + 墨刀
   + MockPlus
@@ -23,6 +24,7 @@
   + OmniGraffle(Mac)
   + ProcessOn
 + 思维脑图
+  + 幕布
   + Xmin
   + MindNode(Mac)
   + mindjet mindmanager
