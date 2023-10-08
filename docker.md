@@ -55,7 +55,16 @@ docker logs
 mkdir -p docker_v/mysql/conf
 cd docker_v/mysql/conf
 touch my.conf
+#注意端口，前者为linux端口，后者为容器中的端口
 docker run -p 3306:3306 --name mysql -v /opt/docker_v/mysql/conf:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=123456 -d imageID
+
+#进入运行中的mysql容器
+docker exec -it container_id /bin/bash
+#登陆mysql 并用创建容器的密码
+mysql -u root -p
+#运行远程连接，而不是localhost而已
+alter user 'root'@'%' identified with mysql_native_password by '123456';
+-----------------------------------------------------------------------------------
 
 #运行容器mysql
 docker run -d --name mysql-test -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 mysql
