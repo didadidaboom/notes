@@ -20,3 +20,6 @@ appendonly yes # 持久化
 
 docker run -itd -p 6379:6379 --name redis --restart=always -v /root/docker-data/redis/redis.conf:/usr/local/etc/redis/redis.conf -v /root/docker-data/redis:/usr/local/etc/redis redis:latest --appendonly yes
 ```
+
++ 客户端
+  redis desktop manager 
