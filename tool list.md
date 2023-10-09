@@ -54,10 +54,12 @@
   + 工具类(Trello, Teambition, 钉钉，石墨)
 + CI/CD工具
   + Jenkins/Travis CI/Circle CI
++ redis
+  + 可视化管理工具：redis-desktop-manager 
 + 数据库
+  + SQLyog 
   + 设计: EZDML
   + 管理: navicat
-  + SQLyog
 + IP映射：SwitchHosts
 + 开源仓储系统
   + WMS
