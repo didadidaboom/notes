@@ -15,7 +15,7 @@ docker start <container-name>  #启动
 docker restart <container-name>  #重启
 
 #日志查询
-docker logs -f <image-id>
+docker logs -f <container-id>
 
 #删除容器
 docker rm <container or container-id>
