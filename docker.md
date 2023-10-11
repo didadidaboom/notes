@@ -14,6 +14,9 @@ docker kill <container-name>  #强壮关闭
 docker start <container-name>  #启动
 docker restart <container-name>  #重启
 
+#日志查询
+docker logs -f <image-id>
+
 #删除容器
 docker rm <container or container-id>
 #查看容器详情
