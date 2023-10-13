@@ -125,5 +125,7 @@ docker run -d --name kafka \
 --env KAFKA_LISTENERS=PLAINTEXT://0.0.0.0:9092 \
 --env KAFKA_HEAP_OPTS="-Xmx256M -Xms256M" \
 --net=host wurstmeister/kafka:2.12-2.3.1
+
+# --net=host： 直接使用容器宿主机的网络命名空间，即没有独立的网络环境。使用宿主机的ip和端口
 ```
 
