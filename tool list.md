@@ -56,10 +56,12 @@
   + Jenkins/Travis CI/Circle CI
 + redis
   + 可视化管理工具：redis-desktop-manager 
-+ 数据库
-  + SQLyog 
++ mysql数据库
+  + 管理界面：SQLyog 
   + 设计: EZDML
   + 管理: navicat
++ mongoDB数据库
+  + 管理界面：Robo 3T 
 + IP映射：SwitchHosts
 + 开源仓储系统
   + WMS
