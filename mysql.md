@@ -32,7 +32,7 @@ mkdir -p docker_v/mysql/conf
 cd docker_v/mysql/conf
 touch my.conf
 #注意端口，前者为linux端口，后者为容器中的端口
-docker run -p 3306:3306 --name mysql -v /opt/docker_v/mysql/conf:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=123456 -d imageID
+docker run -p 3306:3306 --restart=always --name mysql -v /opt/docker_v/mysql/conf:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=123456 -d imageID
 
 docker run -p 3306:3306 --name mysql -v /opt/mysql/conf:/etc/mysql -v /opt/mysql/logs:/var/log/mysql -v /opt/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d imageID
 
