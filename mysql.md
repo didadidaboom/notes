@@ -42,4 +42,18 @@ docker exec -it container_id /bin/bash
 mysql -u root -p
 #运行远程连接，而不是localhost而已
 alter user 'root'@'%' identified with mysql_native_password by '123456';
-``` 
+```
+
+# local mysql
+```
+#To backup/save databases as SQL files, run
+mysqldump -uroot -p database_name > dumpfilename.sql
+
+#Copy the dumpfilename.sql file over to the other system
+mysql -uroot -p database_name < dumpfilename.sql
+
+#下载mysql后
+sudo mysql_secure_installation
+sudo mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'yourpasswd';
+```
