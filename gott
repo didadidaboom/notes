@@ -21,5 +21,6 @@ cluster nodes
 #创建内容 获取内容
 set abc 123
 get abc
+del abc
 
 ```
