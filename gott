@@ -84,8 +84,11 @@ admin 0.000GB
 config 0.000GB
 local 0.000GB
 
-#创建数据库
-use dbname
+#使用数据库名字：test
+use test
+#插入数据 table:recommend_user,表结构 {"userId":1001, "toUserId":1002, "score":90,"date":"2021/12/12"}
+db.recommend_user.insert({"userId":1001, "toUserId":1002, "score":90,"date":"2021/12/12"})
+db.recommend_user.insert({"userId":1001, "toUserId":1002, "score":90,"date":"2021/12/12"})
 
 
 #可以通过客户端打开
