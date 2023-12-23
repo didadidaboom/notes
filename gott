@@ -94,6 +94,8 @@ db.recommend_user.insert({"userId":1001, "toUserId":1002, "score":90,"date":"202
 show tables
 #查询表格字段
 db.recommend_user.find({})
+#创建索引，toUserId:正序，score：倒序
+db.recommend_user.createIndex({"toUserId":1,"score":-1})
 
 
 #可以通过客户端打开
