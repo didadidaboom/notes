@@ -55,7 +55,7 @@ docker ps
 docker pull foxiswho/rocketmq:server-4.6.1
 docker pull foxiswho/rocketmq:broker-4.6.1
 #创建nameserver容器
-docker create -p9876:9876 --name rmqserver \
+docker create -p 9876:9876 --name rmqserver \
 -e "JAVA_OPT_EXT=-server -Xms128m -Xms128m -Xms128m" \
 -e "JAVA_OPTS=-Duser.home=/opt" \
 -v rmqserver-logs:/opt/logs \
