@@ -52,15 +52,15 @@ docker ps
 
 # 部署reocketMQ
 ```
-docker pull foxiswho/rocketmq:server-4.6.1
-docker pull foxiswho/rocketmq:broker-4.6.1
+docker pull foxiswho/rocketmq:server-4.3.2
+docker pull foxiswho/rocketmq:broker-4.3.2
 #创建nameserver容器
 docker create -p 9876:9876 --name rmqserver \
 -e "JAVA_OPT_EXT=-server -Xms128m -Xms128m -Xms128m" \
 -e "JAVA_OPTS=-Duser.home=/opt" \
 -v rmqserver-logs:/opt/logs \
 -v rmqserver-store:/opt/store \
-foxiswho/rocketmq:server-4.6.1
+foxiswho/rocketmq:server-4.3.2
 
 #创建broker.conf文件
 vim /gotu/rmq/rmqbroker/conf/broker.conf
@@ -75,7 +75,7 @@ docker create -p 10911:10911 -p 10909:10909 --name rmqbroker \
 -v /gotu/rmq/rmqbroker/conf/broker.conf:/etc/rocketmq/broker.conf \
 -v rmqbroker-logs:/opt/logs \
 -v rmqbroker-store:/opt/store \
-foxiswho/rocketmq:broker-4.6.1
+foxiswho/rocketmq:broker-4.3.2
 
 #启动容器
 docker start rmqserver rmqbroker
