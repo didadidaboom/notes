@@ -95,9 +95,9 @@ docker run -e "JAVA_OPTS=-Drocketmq.namesrv.addr=192.168.31.81:9876 -Dcom.rocket
 + mongodb
 ```
 # 拉取镜像
-docker pull mongo:4.0.3
+docker pull mongo:4.4.26
 #创建容器
-docker create --name mongodb --restart=always -p 27017:27017 -v mongodb:/data/db/mongo:4.0.3
+docker create --name mongodb --restart=always -p 27017:27017 -v mongodb:/data/db/mongo:4.4.26
 #启动容器
 docker start mongodb
 #进入容器
