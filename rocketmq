@@ -1,0 +1,41 @@
+#拉取镜像
+docker pull foxiswho/rocketmq:server-4.3.2
+docker pull foxiswho/rocketmq:broker-4.3.2
+#注意：只要涉及端口，都要在阿里云服务器的控制台开启端口。
+
+# 创建 nameserver 容器
+docker create -p 9876:9876 --name rmqserver \
+-e "JAVA_OPT_EXT=-server -Xms128m -Xmx128m -Xmn128m" \
+-e "JAVA_OPTS=-Duser.home=/opt" \
+-v rmqserver-logs:/opt/logs \
+-v rmqserver-store:/opt/store \
+foxiswho/rocketmq:server-4.3.2
+
+# 创建 broker.conf 文件
+mkdir -p /itcast/rmq/rmqbroker/conf
+vim /itcast/rmq/rmqbroker/conf/broker.conf
+
+# 写入下列内容:
+brokerIP1=192.168.31.81
+namesrvAddr=192.168.31.81:9876
+brokerName=broker_tanhua
+
+# 创建 broker 容器
+docker create -p 10911:10911 -p 10909:10909 --name rmqbroker \
+-e "JAVA_OPTS=-Duser.home=/opt" \
+-e "JAVA_OPT_EXT=-server -Xms128m -Xmx128m -Xmn128m" \
+-v /itcast/rmq/rmqbroker/conf/broker.conf:/etc/rocketmq/broker.conf \
+-v rmqbroker-logs:/opt/logs \
+-v rmqbroker-store:/opt/store \
+foxiswho/rocketmq:broker-4.3.2
+
+# 启动容器
+docker start rmqserver rmqbroker
+
+#部署RocketMQ的管理工具
+docker pull styletang/rocketmq-console-ng:1.0.0
+
+#创建并启动容器
+docker run -e "JAVA_OPTS=-Drocketmq.namesrv.addr=47.98.142.37:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false" -p 8082:8080 -t styletang/rocketmq-console-ng:1.0.0
+
+#然后访问 http://47.98.142.**:8082/ 即可看到如下界面，说明环境搭建成功
