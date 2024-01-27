@@ -40,8 +40,11 @@ docker run -p 3306:3306 --name mysql -v /opt/mysql/conf:/etc/mysql -v /opt/mysql
 docker exec -it container_id /bin/bash
 #登陆mysql 并用创建容器的密码
 mysql -u root -p
-#运行远程连接，而不是localhost而已
-alter user 'root'@'%' identified with mysql_native_password by '123456';
+
+ALTER USER "root"@'localhost' IDENTIFIED BY 'test123';
+#添加远程登陆用户
+CREATE USER "test"@'%' IDENTIFIED WITH mysql_native_password BY 'test123';
+GRANT ALL PRIVILEGES ON  *.* TO 'test'@'%';
 ```
 
 # local mysql
