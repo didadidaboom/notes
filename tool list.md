@@ -59,7 +59,7 @@
 + mysql数据库
   + 管理界面：SQLyog 
   + 设计: EZDML
-  + 管理: navicat
+  + 管理: navicat (https://yddwd.com/94.html)
 + mongoDB数据库
   + 管理界面：Robo 3T 
 + IP映射：SwitchHosts
