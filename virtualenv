@@ -8,3 +8,8 @@
  # run virtualenv
   source reco_sys/bin/activate
  ```
+
+python3 -m venv name_env
+source name_env/bin/activate
+deactivate
+
